@@ -512,7 +512,7 @@ int mosquitto_auth_unpwd_check(void *userdata, const char *username, const char 
 	if (!username || !*username || !password || !*password)
 		return MOSQ_DENY_AUTH;
 
-	_log(LOG_DEBUG, "mosquitto_auth_unpwd_check(%s)", (username) ? username : "<nil>");
+	_log(LOG_DEBUG, "PPP: mosquitto_auth_unpwd_check(%s)", (username) ? username : "<nil>");
 
 #if MOSQ_AUTH_PLUGIN_VERSION >=3
 	struct cliententry *e;
